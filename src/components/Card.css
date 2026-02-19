@@ -4,25 +4,32 @@
     height: 300px;
     background-color: #fffccc;
     border-radius: 12px;
-    border: 2px solid;
-    border-color: rgb(0, 0, 0);
     padding: 20px;
+
+    border: 2px solid;
+    border-color: rgb(0, 0, 0);    
     
-    
-    flex-direction: column;
-    justify-content: space-between;
+    display: inline-block;
     transition: all 0.3s ease;
+
+    margin-right: -100px;
 }
 
 h1{
     font-size: 2rem;
+    color: #444444
 }
+
+p{
+    font-size: 1rem;
+    color: #444444
+}
+
 
 /* Hover state */
 .business-card:hover {
     transform: scale(1.05) rotate(1deg);
     box-shadow: 0 0 15px #646cff50;
-    /* box-shadow: 0 10px 20px rgba(26, 28, 119, 0.15); */
 }
 
 .business:hover::before {
