@@ -1,28 +1,16 @@
 import { useState } from 'react'
-import Card from './components/Card'
+import CardHolder from './components/CardHolder'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const data = [
-    { id: 1, name: 'Test1', description: 'Red' },
-    { id: 2, name: 'Test2', description: 'Yellow' },
-    { id: 3, name: 'Test3', description: 'Orange' },
-  ];
+
 
   return (
     <>
-      <div>
-        {data.map((card) => (
-                <Card key={card.id} name={card.name} description={card.color}> 
-                </Card>
-        ))}
-
-        <Card name="TestName" description="TestDescription"/>
-              
-      </div>
+      <CardHolder></CardHolder>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
