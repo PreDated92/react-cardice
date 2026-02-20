@@ -5,8 +5,7 @@ function Card(props) {
   return (
     <div style={{
       'background-color': `${props.description}`, 
-      'transform': `rotate(${props.rotate}deg)`}} 
-      // To fix: this transform prevents hover transform from working
+      'rotate': `${props.rotate}deg`}} 
       className="business-card">
         <h1>{props.name}</h1>
         <p>{props.description}</p>
