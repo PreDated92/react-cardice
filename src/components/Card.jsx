@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageSrc from './ImageContainer';
 import './Card.css';
 
 function Card(props) {  
@@ -8,6 +9,7 @@ function Card(props) {
       'rotate': `${props.rotate}deg`}} 
       className="business-card">
         <h1>{props.name}</h1>
+        { <ImageSrc cardType={props.cardType}/> }
         <p>{props.description}</p>
     </div>
   );

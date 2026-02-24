@@ -1,0 +1,22 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    overflow: hidden;
+}
+
+.card-border {
+    display: flex;
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+    width: 145px;
+    height: 145px;
+}
+
+.card-image {
+    max-width: 100%;
+    max-height: 100%;          /* Added to prevent vertical stretching */
+    object-fit: contain;
+    display: block;
+}
