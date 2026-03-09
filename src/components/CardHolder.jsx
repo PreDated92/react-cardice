@@ -8,11 +8,13 @@ function CardHolder() {
         { id: 2, rotate: '2', cardType: 'paper', name: 'Test2', description: 'Yellow' },
         { id: 3, rotate: '3', cardType: 'scissors', name: 'Test3', description: 'Orange' },
     ];
+
     return (
         <div className="card-holder">
             {data.map((card) => (
                 <Card 
-                    key={card.id} 
+                    key={card.id}
+                    id={card.id} 
                     rotate={card.rotate} 
                     cardType={card.cardType}
                     name={card.name} 
@@ -20,7 +22,7 @@ function CardHolder() {
                 </Card>
             ))}
 
-            <Card name="TestName" description="TestDescription"/>
+            <Card name="TestName" description="TestDescription" id={2}/>
         </div>
     );
 }
