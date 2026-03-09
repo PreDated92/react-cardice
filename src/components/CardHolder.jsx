@@ -11,9 +11,12 @@ function CardHolder() {
     return (
         <div className="card-holder">
             {data.map((card) => (
-                <Card key={card.id} rotate={card.rotate} 
-                cardType={card.cardType}
-                name={card.name} description={card.description}> 
+                <Card 
+                    key={card.id} 
+                    rotate={card.rotate} 
+                    cardType={card.cardType}
+                    name={card.name} 
+                    description={card.description}> 
                 </Card>
             ))}
 

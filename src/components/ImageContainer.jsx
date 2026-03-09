@@ -18,7 +18,11 @@ function ImageSrc({ cardType } = {}) {
   return (
     <div className="image-container">
         <div className="card-border">
-            <img src={cardImg} title={cardType} alt={cardType} className="card-image"/>    
+            <img 
+              src={cardImg} 
+              title={cardType} 
+              alt={cardType} 
+              className="card-image"/>    
         </div>
     </div>
   );
