@@ -13,6 +13,9 @@
     transition: all 0.3s ease;
 
     margin-right: -100px;
+
+    /* Positioning as relative to enable z-axis shenanigans */
+    position: relative; 
 }
 
 h1{
@@ -28,7 +31,10 @@ p{
 
 /* Hover state */
 .business-card:hover {
-    transform: scale(1.05) rotate(1deg);
+    /* important overrides most specific element selector*/
+    z-index: 10 !important; 
+    /* transform: scale(1.05) rotate(1deg) translateY(-20px); */
+    transform: scale(1.05) translateY(-20px);
     box-shadow: 0 0 15px #646cff50;
 }
 
